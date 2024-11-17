@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .comman{
+        width: 200px;
+        height: 200px;
+        padding-bottom: 15px;
+      }
+      .fa-shop{
+        color: yellow;
+      }
+      .fa-gift{
+        color: yellow;
+      }
+      .fa-question{
+        color: yellow;
+      }
+      .fa-copyright{
+        color: yellow;
+      }
+      *{
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar{
+  /* border: 1px solid red; */
+  height: 6vh;
+  margin: auto;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  
+}
+.main{
+  /* border:  1px solid black; */
+  background-color: white;
+}
+.itm{
+  z-index: 10;
+   width: 45vw;
+  height: 3vh;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color:rgba(109, 111, 122, 0.139);
+  padding-left: 40px;
+
+}
+.fa{
+  z-index: 15;
+  position: absolute;
+  top: 8px;
+ left: 15px;
+}
+.searchB{
+  margin: 13px 0px 0px 90px;
+  position: relative;
+  /* border: 2px solid black; */
+
+}
+.logo{
+  width: 6vw;
+  margin: 8px;
+}
+.fa-solid{
+  margin: 20px 0px 0px 30px;
+  
+  
+
+}
+.allbtn{
+  /* border: 2px solid blue; */
+  /* display: flex; */
+  width: 30vw;
+}
+.fa-cart-shopping{
+  margin: 20px 0px 0px 50px;
+}
+.fa-shop{
+  margin: 20px 0px 0px 50px;
+}
+.fa-ellipsis-vertical{
+  margin: 20px 0px 0px 80px;
+
+}
+
+
+
+.main2{
+  background-color:rgba(169, 169, 169, 0.155);
+  height: 10vh;
+}
+.navbar-second{
+  background-color: white;
+  width: 80vw;
+  height: 13vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 10px;
+  
+}
+
+body{
+  /* background-color:rgba(161, 183, 213, 0.362); */
+  background-color:rgba(109, 111, 122, 0.139);
+}
+
+.com{
+  margin-top: 15px;
+ 
+}
+.com1{
+  margin-left: 150px;
+}
+
+.com8{
+  margin-right: 150px;
+}
+
+.display-bar{
+  width: 80vw;
+  height: 30vh;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+
+}
+.img52{
+  width: 80vw;
+  height: 30vh;
+}
+
+.bar-selectors{
+  /* display: flex; */
+  border: 2px solid red;
+  width: 80vw;
+  margin: auto;
+  background-color: white;
+  
+  
+}
+.eighty{
+  background-color: white;
+  width: 65vw;
+  height: 40vh;
+  margin: auto;
+  margin-left: 10vw;
+  margin-top: 20px;
+  overflow-x: auto;
+  display: flex;
+
+}
+
+.twenty{
+  background-color: blue;
+  width: 14vw;
+  height: 40vh;
+  margin: auto;
+  margin-right: 10vw;
+  margin-top: 20px;
+}
+
+.comu{
+/* width: 10px ;
+height: 10px; */
+margin: 2px;
+text-align: center;
+border: 0.5px solid rgba(101, 96, 96, 0.304);
+border-radius: 10px;
+padding: 10px;
+}
+
+.vhgh{
+  width: 14vw;
+  height: 40vh;
+
+
+}
+    </style>
+</head>
+
+<body>
+  <!-- navbar -->
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    alt="logo">
+
+            </div>
+            <div class="searchB" style="position:relative;">
+                <input  class="itm" type="text" placeholder="search your item">
+                <i class="fa fa-magnifying-glass "></i>
+
+            </div>
+            <div class="allbtn">
+                <i class="fa-solid fa-user"></i>
+                <a class="c">Login</a>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="cart">Cart</a>
+
+                <i class="fa-solid fa-shop" style="color: black;"></i>
+                <a class="bec">Become a Seller</a>
+
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+    </div>
+          <!-- navbar second -->
+        <div class="navbar-second">
+            <div class="com com1">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100">
+                <h4>Grocery</h4>
+            </div>
+            <div class="com com2">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="">
+                <h4>Mobiles</h4>
+            </div>
+            <div class="com com3">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" alt="">
+                <h4>Appliances</h4>
+            </div>
+            <div class="com com4">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" alt="">
+                <h4>Travel</h4>
+            </div>
+            <div class="com com5">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" alt="">
+                <h4>Fashion</h4>
+            </div>
+            <div class="com com6">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt="">
+                <h4>Electronics</h4>
+            </div>
+            <div class="com com7">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt="">
+                <h4>Beauty Toy</h4>
+            </div>
+            <div class="com com8">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100" alt="">
+                <h4>Two wheelers</h4>
+            </div>
+          <!-- display bar  -->
+        </div>
+        <!-- Display-Bar -->
+        <div class="display-bar">
+            <img  class="img52"   src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/971d6af3a70377ee.jpg?q=20" alt="">
+        </div>
+          <!-- best of elec -->
+      <div style="width: 80vw; margin: auto; display: flex; margin-top: 10px;">
+        <!-- heading div --> 
+        <div style="width: 83%;  background-color: white; ">
+          <h1 style="padding-left: 20px; margin-bottom: 20px;margin-top: 20px; font-size: 40px; font-weight: 400; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Best Of Electronics</h1>
+         
+            <!-- image div -->
+            <div style="display: flex; overflow-x: auto; ">
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center;">
+                <img class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/Page/Gaming/Laptops/Halo/Creatives/Halos_Laptop1.CB592910535.png">
+                <h2>Gaming Laptop</h2>
+                
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center;">
+                <img   class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/ATF/Halos/Halos_300x300_5.CB612633941.png" alt="">
+                <h2>Camera</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center;">
+                <img class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/ATF/Halos/Halos_300x300_4.CB612633941.png" alt="">
+                <h2>Tablet</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center;">
+                <img class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/ATF/Halos/Halos_300x300_7.CB612633941.png" alt="">
+                <h2>Speaker</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center;">
+                <img class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/ATF/Halos/Halos_300x300_2.CB612633941.png" alt="">
+                <h2>Watch</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center;">
+                <img class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/ATF/Halos/Halos_300x300_3.CB612633941.png" alt="">
+                <h2>Earbud</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; margin-right: 10px;">
+                <img class="comman" src="https://f.media-amazon.com/images/G/31/img22/Electronics/BAU/Page/Revamp/Creatives/ATF/Halos/Halos_300x300_6.CB612633941.png" alt="">
+                <h2>Gaming Keyboard</h2>
+              </div>
+              
+            </div>
+          
+        </div>
+        <div style="width: 17%;  margin-left: 10px; background-color: white;">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/32e8514665f65267.jpg?q=20" height="400px" width="250px">
+
+        </div>
+        
+      </div>
+       <!-- beauty food and toys -->
+        <div style="width: 80vw; margin: auto; display: flex; margin-top: 10px;">
+        <!-- heading div -->
+        <div style="width: 100%;  background-color: white; ">
+          <h1 style="padding-left: 20px; margin-bottom: 20px;margin-top: 20px; font-size: 40px; font-weight: 400; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Beauty, Food, Toy and more</h1>
+          <div>
+            <!-- image div -->
+            <div style="display: flex; overflow-x: auto;">
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img class="comman" src="https://m.media-amazon.com/images/I/31E6ufssPrL.AC_SX250.jpg">
+                <h2>Lotus</h2>
+                
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px; ">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;" >
+                <h2>Lego</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img class="comman" src="https://m.media-amazon.com/images/I/41RroDuac8L.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Coffee</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Lego</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Lego</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Lego</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Lego</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Lego</h2>
+              </div>
+              <div style="border: 0.5px solid black; height: 30vh; border-radius: 10px; margin-left: 10px;text-align: center; padding: 10px;">
+                <img   class="comman" src="https://m.media-amazon.com/images/I/51w3RHJJaLL.AC_SX250.jpg" alt="" style="padding-bottom: 15px;">
+                <h2>Lego</h2>
+              </div>
+            
+              </div>
+              
+            </div>
+          </div>
+        </div>
+       
+        <!-- flex-wrap -->
+         <div style="width: 80vw; margin: auto;  height: 70vh;margin-top: 10px; display: flex;">
+          <div style="width: 40%; background-color: white; height: 70vh;">
+            <h1 style="padding-left: 20px; margin-bottom: 10px; font-size: 30px; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Moonsoon-ready Deals</h1>
+
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="width: 29vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/1.png" alt="" style=" padding-left: 32px; padding-bottom: 15px;">
+                <h4 style="font-weight: 300; font-size: 25px; text-align: center;">Men's Slipper & Flip flops </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">Min. 70% OFF</h4>
+              </div>
+              <div style="width: 29vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/2.png" alt=""  style=" padding-left: 32px; padding-bottom: 15px;">
+                <h4 style="font-weight: 300; font-size: 25px; text-align: center;">Men's Sandel & floters </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">Min. 70% OFF</h4>
+              </div>
+              <div style="width: 29vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/3.png" alt=""  style=" padding-left: 32px; padding-bottom: 7px;">
+                <h4 style="font-weight: 300; font-size: 25px; text-align: center;">Womens Bra </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">Grab Now</h4>
+              </div>
+              <div style="width: 29vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/4.png" alt=""  style=" padding-left: 32px; padding-bottom: 15px;">
+                <h4 style="font-weight: 300; font-size: 25px; text-align: center;">Men's Sports shoes </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">Min. 70% OFF</h4>
+              </div>
+            </div>
+
+           </div>
+
+           <div style="width: 59%; background-color: white; height: 70vh; margin-left: 20px;">
+            <img src="/flik.png" style="height: 70vh; width: 885px; ">
+
+           </div>
+
+         </div>
+
+         <!-- secondflezwrp -->
+         <div style="display: flex; width: 80vw; height: 72vh; border: 1px solid black; margin: auto; margin-top: 10px; margin-bottom: 100px;">
+          <!-- first -->
+           <div style="width: 26vw; background-color: white; ">
+            <h1 style="padding-left: 20px; margin-bottom: 30px; font-size: 30px; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Home Decor And Furnishing</h1>
+
+            <div style="display: flex; flex-wrap: wrap;">
+              <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/A.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Bedsheets </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">In focus now</h4>
+              </div>
+              <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/B.png" alt="" style=" padding-left:  7px; padding-bottom: 10px; padding-top: px;">
+                <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Wall Clock </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">special offers</h4>
+              </div>
+              <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/cow.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Cow statue </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">Min. 70% OFF</h4>
+              </div>
+              <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                <img src="/Gardening plants.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Gardening </h4>
+                <h4 style="font-size: 25px; text-align: center; color: green;">Min. 70% OFF</h4>
+              </div>
+            </div>
+           </div>
+
+           <!-- second -->
+            <div style="width: 26vw; background-color: white; margin-left: 19px;">
+              <h1 style="padding-left: 20px; margin-bottom: 30px; font-size: 30px; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Top Deals</h1>
+
+              <div style="display: flex; flex-wrap: wrap;">
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/i pad.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Apple I-pad </h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Min. 40% OFF</h4>
+                </div>
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/instax.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Instax Camera </h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Trending</h4>
+                </div>
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/apple pencil.png" alt="" style=" padding-left:  27px; padding-bottom: 15px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Apple Pencil</h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Special Offer</h4>
+                </div>
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/adidas.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Adidas </h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Min. 40% OFF</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- third -->
+             <div style="width: 26vw; background-color: white; margin-left: 18px;" >
+              <h1 style="padding-left: 20px; margin-bottom: 30px; font-size: 30px; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Explore new Deals</h1>
+
+              <div style="display: flex; flex-wrap: wrap;">
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/t shirt.png" alt="" style=" padding-left:  17px; padding-bottom: 15px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">T-shirts </h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Min. 50% OFF</h4>
+                </div>
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/glasses.png" alt="" style=" padding-left:  7px; padding-bottom: 15px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Glasses </h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Min. 80% OFF</h4>
+                </div>
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/womens kurta.png" alt="" style=" padding-left:  30px; padding-bottom: 25px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Women's Kurta </h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Trending</h4>
+                </div>
+                <div style="width: 23vh; height: 31vh; border: 1px solid black; margin-left: 10px; margin-bottom: 10px; border-radius: 7px;">
+                  <img src="/womens shirt.png" alt="" style=" padding-left:  37px; padding-bottom: 30px; padding-top: 8px;">
+                  <h4 style="font-weight: 300; font-size: 22px; text-align: center;">Women's shirt</h4>
+                  <h4 style="font-size: 25px; text-align: center; color: green;">Grab Now!</h4>
+                </div>
+              </div>
+             </div>
+
+         </div>
+
+         <!-- text -->
+          <div style="width: 95vw; margin: auto; height: 190vh; text-align: center; color: rgba(128, 128, 128, 0.917);">
+            <h3 style="text-align: start; font-weight: 300; font-size: 30px;  margin-bottom: 20px; color: rgb(104, 104, 104);">Top Stories: Brand Directories</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem dolorem nisi mollitia, perspiciatis tempora? Ullam voluptates recusandae saepe esse non odio nisi, corporis accusamus illum modi, omnis cum. Nesciunt.
+            Dolor vero at ad ipsam id excepturi harum esse corrupti. Consequatur vitae quisquam nisi aliquam et animi officiis, exercitationem, placeat ab est maiores nesciunt tempora! Reiciendis sequi dolore pariatur hic.
+            Illo beatae quod aperiam molestiae numquam officia facilis illum perspiciatis dolorem! Necessitatibus nemo unde placeat atque excepturi aperiam qui corrupti? Vel quae quidem laudantium praesentium recusandae voluptas facere quam minima!
+            Sint suscipit voluptates optio similique nesciunt impedit odit, laudantium repellendus aliquam et aliquid ut. Pariatur optio atque accusamus suscipit sint iusto sit? Tempora excepturi sint illum natus esse non et?
+            Recusandae aut nostrum eius laborum vero aperiam, ullam eligendi mollitia quia numquam officiis odio obcaecati nam voluptates dicta quod accusamus dolorem corporis minima cum iure expedita, nulla asperiores magni? Optio!
+            Optio velit iure cum ducimus reprehenderit maxime omnis, nihil quis earum incidunt autem explicabo soluta eius magnam facere modi quasi quisquam sed odio numquam ipsa ex veritatis sunt quod. Maiores!
+            In illum doloribus distinctio atque. Dolor quam ea nulla dicta repudiandae voluptatum provident libero modi quis? Blanditiis quae voluptas assumenda quam molestiae. Corporis voluptas animi illum, consectetur reiciendis mollitia labore.
+            Quis, deleniti saepe nobis ullam totam autem cumque non assumenda repellendus architecto illum! Accusantium quam id accusamus quasi, error incidunt repellat est voluptatem debitis quos deleniti et eveniet vero dolorem?
+            Voluptatem minus temporibus officia quibusdam, accusantium iste itaque consequuntur adipisci laudantium doloribus. Ducimus eveniet architecto soluta molestias! Quis modi, aperiam nisi ea, architecto rem ipsa minus distinctio ut quia accusantium!
+            Ea harum error, delectus aperiam numquam recusandae assumenda excepturi fugit doloremque libero reiciendis magnam culpa minima dolorum doloribus accusantium ad praesentium et voluptate expedita. Fugiat voluptatibus quo quod! Neque, odit?
+            Sed cupiditate iure ullam maxime suscipit, quos dignissimos culpa ratione tenetur! Assumenda, quaerat tempore dolore rerum omnis, sed accusantium officiis hic itaque ratione, minima asperiores voluptatem suscipit vitae voluptatum sunt?
+            Saepe natus cumque, esse illo iste minus reiciendis unde in magni iure ullam cum, possimus ipsam alias repudiandae voluptatum. Sapiente ipsum est quisquam consectetur provident dolor eum debitis quae tempore?
+            Veritatis aliquam commodi omnis quod natus soluta perferendis magni ipsam. Vero harum mollitia at obcaecati explicabo exercitationem dolorum minus distinctio, reiciendis architecto necessitatibus asperiores corrupti neque voluptate ducimus porro laborum!
+            Beatae aliquid impedit obcaecati velit officia praesentium. Laudantium voluptas sit perspiciatis ex deleniti earum explicabo, expedita beatae, natus consequatur ad labore nihil neque error consequuntur eligendi, repellat culpa. Eaque, neque!
+            Commodi, facere perspiciatis. Quod incidunt iusto similique explicabo eos modi cum dolorem soluta voluptatem, tempore totam asperiores quos iure sunt error? Ea eaque tempore unde deleniti asperiores aliquid et expedita!
+            Ad harum, quo atque rerum, sed praesentium pariatur optio doloribus voluptates tempora accusamus aspernatur maxime, obcaecati odio blanditiis molestias quis ullam non officiis dolores quos. Nostrum suscipit enim eos accusamus.
+            Accusantium perferendis quaerat quos, ducimus eos optio a. Repellendus facilis, aspernatur excepturi nesciunt dolore dicta rem impedit quisquam. Debitis repellendus ab, expedita modi deleniti alias sunt animi. Aut, dolor a!
+            Aliquam inventore quasi sequi deleniti voluptate nobis debitis obcaecati possimus necessitatibus impedit, ea modi explicabo voluptas nam vero libero porro tenetur esse incidunt. Modi, ex repellendus sunt nobis quaerat numquam?
+            Cupiditate nemo rem suscipit iusto dolor aliquid laboriosam voluptatem nam. Voluptatem culpa nobis consectetur hic reiciendis voluptas dolorum placeat, harum, libero facere quo esse provident ducimus amet blanditiis fugiat unde?
+            Molestiae maiores quis id fugit, temporibus corporis, harum debitis totam repudiandae nobis officia accusamus minima dolorem. Alias, impedit. Tempora quis praesentium cupiditate, quas adipisci molestias deserunt pariatur voluptatum voluptas reiciendis?
+            Officiis, a libero obcaecati ipsa beatae iure nemo reprehenderit dolorum nostrum facere incidunt expedita, laudantium, voluptate voluptates harum quae enim odio dolores doloremque quia ad. Sequi nostrum laborum quo cumque!
+            Illum cumque accusantium nihil totam repellat voluptate quo neque ratione aperiam! Tenetur, vel assumenda. Impedit eaque inventore, quia quod illo itaque excepturi recusandae officia quasi, rem perspiciatis suscipit architecto. Cum!
+            Reiciendis ea consequuntur explicabo voluptatem ipsa magni consequatur! Officiis voluptas debitis porro cupiditate illo asperiores repellat, repudiandae eius sequi natus. Nisi, debitis facilis. Asperiores odit eligendi ex blanditiis quisquam reprehenderit!
+            Maiores molestias quos porro, est sit quas recusandae laborum dolorum a. Tenetur id enim inventore ea voluptates alias optio fugiat accusamus et, laboriosam nisi voluptatum amet eum veritatis dolorem temporibus.
+            Iusto impedit, itaque fuga rem officiis pariatur sequi a sit natus. Iusto natus praesentium ipsam ab dicta laboriosam quos eaque aspernatur voluptatem maxime nulla perferendis consectetur quasi hic, animi doloribus!
+            Eius ad sint quis fugiat totam sit quam impedit amet eligendi voluptates ex, unde eaque corrupti dicta pariatur facere, perspiciatis dolore sed praesentium eos libero optio quasi? Sunt, tempore animi.
+            Ex harum ipsum nesciunt, ab dolor ullam cupiditate quis aliquam, dolorem nam id dolorum odio ipsam repudiandae ducimus placeat iure similique maxime quidem impedit blanditiis sed, enim optio! Eum, autem!
+            Veniam mollitia molestias inventore aliquid voluptatem nostrum, culpa saepe animi quo velit vel recusandae ratione dolore repellendus quasi aspernatur possimus, neque excepturi itaque! Sed esse fuga aliquam, totam porro pariatur!
+            Quae debitis placeat perferendis pariatur quod dignissimos mollitia enim consequuntur, tempore numquam natus sed ad quos tempora quibusdam totam reiciendis nisi! Eligendi provident quos eum sapiente nam quisquam fugit eaque?
+            Iure, iste aperiam accusamus rem quo alias minus tenetur, dignissimos dolorum mollitia non quos. Optio, eveniet error illo hic laudantium delectus! Autem ut iste totam neque tenetur labore voluptatum similique.
+            Alias vero hic unde laboriosam? Quis cum, ullam officiis consectetur tempore beatae deserunt ut quod est reiciendis. Quibusdam itaque recusandae tenetur fuga ipsum minus aut, vel perspiciatis sed consectetur deserunt!
+            Porro amet beatae aut omnis non assumenda atque tempore at expedita, illum suscipit animi necessitatibus soluta saepe sed, fugiat sapiente voluptatibus sint architecto dolores sequi aliquam quia laborum quasi! Facere.
+            Ipsam consectetur error neque minima vel sed iure culpa sit. Dignissimos, totam! Nisi placeat sequi temporibus, error iure corrupti maxime voluptatibus a explicabo repudiandae provident ratione delectus qui suscipit cumque.
+            Repellendus, ipsam sunt. Temporibus ad nulla inventore reprehenderit corrupti ratione eos autem laborum quod ducimus ipsum iure commodi id ut non cumque minima quia vitae quisquam quo, dolorem impedit ea.
+            Placeat molestias rerum laudantium iusto totam aperiam facere quasi ullam laborum nam nisi veritatis praesentium alias accusantium cumque, iste ut hic recusandae ipsum sapiente veniam unde velit? Eaque, laboriosam neque.
+            Perspiciatis labore assumenda incidunt aut deleniti facilis obcaecati odit quam mollitia, esse molestias odio hic vel expedita voluptatibus provident delectus tenetur dolorum nisi, dolorem dicta sint, error eum. Aspernatur, quibusdam.
+            Perferendis tenetur ullam accusamus voluptatibus reprehenderit atque, animi delectus eius rem magnam dolores ipsam deleniti unde, nostrum, repudiandae ex nesciunt assumenda provident doloribus voluptatem deserunt. Placeat, dolor quas. Nemo, consectetur?
+            Voluptatem facere tempore fugit quam nemo labore asperiores nobis, aliquam nesciunt ipsum quaerat, atque error sunt quidem doloremque? Dolores aspernatur natus a, harum ipsa vero expedita saepe corporis distinctio eos.
+            Sint, ipsa consequuntur libero, ipsam placeat optio nostrum tempore accusamus officiis, molestiae nisi maiores. Cupiditate repudiandae eaque impedit dolorum neque at? Iure, eaque. Sit, facilis sint. Quae facere dolorem perspiciatis?
+            Amet, ipsum tenetur. Tempore aut earum ut, corrupti mollitia laudantium rerum consequuntur illum aliquam recusandae ab unde cupiditate, ea accusamus nihil similique, dolore numquam alias harum iste porro omnis qui.
+            Nam dicta officia et nemo eius recusandae quisquam! Quidem accusantium illo tempore cupiditate eos tenetur dicta laboriosam sed earum pariatur necessitatibus magni dolores quia eum voluptas ullam, rem est quod.
+            Officiis eaque perspiciatis quis natus facilis laudantium omnis ipsum sapiente ratione inventore soluta accusantium modi fugiat repudiandae eligendi deleniti, dolor voluptas esse! Culpa, expedita odio consectetur ab dicta ipsam aliquid.
+            Perspiciatis asperiores odio vel omnis non ipsam aliquam voluptatum perferendis officia soluta, repudiandae error a sapiente, tempora ea fugiat provident eveniet consequatur nam deleniti, qui voluptatem assumenda est. Nostrum, aut?
+            Corporis nostrum nemo temporibus sit, ullam enim impedit eligendi totam quia magni quos, sint neque cupiditate voluptate recusandae asperiores perferendis. Accusamus rerum culpa ipsa ipsum? Ut cum facilis omnis veniam.
+            Pariatur sunt qui minima deleniti numquam itaque, dolore quibusdam sed amet natus ipsam facilis quis eveniet ut aut consequuntur vel nihil libero cumque accusamus? Laborum dolore sint accusamus iure labore.
+            Tempora officiis, dolorem repellendus odit officia nesciunt laudantium illo! Ipsum fugit cupiditate labore optio modi. Magni error quasi provident suscipit neque aperiam asperiores ea! Neque laudantium aspernatur obcaecati veniam iure.
+            Hic rem sit nisi architecto cumque quo, unde, eum recusandae iure repellat blanditiis. Ratione sunt illum recusandae ex culpa est exercitationem, obcaecati reprehenderit praesentium maxime labore doloribus nesciunt hic voluptas!
+            Accusamus voluptas ratione sed nam in veniam libero quia dicta vitae voluptate debitis culpa, voluptatem ex recusandae totam a nesciunt iste beatae nostrum tempore nisi nemo quidem praesentium veritatis? Ea?
+            Tempore, totam. Nisi consequuntur exercitationem voluptatum? Assumenda quod, autem enim neque illum maxime molestias esse inventore, praesentium eveniet ratione excepturi pariatur voluptatibus. Labore, facilis? Dolorem earum officia quidem veniam suscipit.
+            Suscipit voluptatum possimus beatae harum iusto similique consectetur voluptates voluptatem tenetur et nobis aperiam, voluptas molestias quas nisi tempore rerum fugit amet nulla dolorum illo, exercitationem quidem aut sed. Cumque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque sunt, vel minima molestias ex doloremque dolores cumque quae itaque alias corporis incidunt, quis accusamus harum tempore eos deserunt voluptatibus.
+            Atque dolorem maxime dolor commodi eaque neque, alias odio eos quidem vitae dignissimos perferendis accusamus iusto facere ut ipsum? Recusandae voluptates magnam expedita, eum aperiam sint vero velit tempora dolores!
+            Laboriosam neque tempora mollitia qui, porro consequatur odit incidunt! Pariatur temporibus architecto esse hic tenetur aperiam, eos obcaecati modi aspernatur sequi explicabo ea amet perspiciatis beatae iste quisquam iure odio.
+            Vero accusantium excepturi natus voluptate eaque debitis recusandae voluptas, delectus ducimus similique iure aut dicta modi iusto id quia nemo ab, aliquam magnam perspiciatis. Repellendus aspernatur sed molestias provident a.
+            Ducimus iusto nisi aut reiciendis qui a, repellendus rerum odit, nesciunt, pariatur excepturi. Ratione alias repellendus distinctio dolore, explicabo quo dolor culpa quae, porro sit officia, voluptate ipsam possimus in?
+            Praesentium voluptates rerum nemo reprehenderit reiciendis totam similique veritatis itaque recusandae dolorum? Ullam voluptates unde, delectus in beatae velit id tempore sequi at itaque quod minima sint perferendis repellat nobis!
+            Corporis doloribus voluptatem explicabo non quo omnis ipsa dolor ratione aperiam quos. Sed excepturi ducimus possimus beatae repudiandae, culpa adipisci provident labore nostrum commodi unde deserunt laudantium porro consequuntur distinctio?
+            Repellat doloremque vero, facilis aperiam quod quasi. Ipsam libero, eligendi ab corporis ut dicta similique ea aliquid alias, eaque repellat culpa aut distinctio ratione deserunt eius. Atque tempora molestias aut?
+            Hic, suscipit accusamus. Necessitatibus aliquid nihil illo ex laudantium modi repudiandae incidunt voluptate minus fugiat? Id sapiente ratione at quod repudiandae laudantium architecto quas dolorum! Velit vel illo quos explicabo?
+            Voluptatibus adipisci quis dignissimos magnam molestiae, quae totam, officiis nostrum voluptatem optio sit dolorem tenetur assumenda distinctio omnis eaque tempora sequi laboriosam aspernatur a. Tempora assumenda deleniti fuga architecto accusantium.
+            Impedit accusamus quaerat voluptate vitae quidem. Voluptates ab explicabo quidem! Hic maiores tenetur, inventore amet esse culpa eius, harum aspernatur impedit fugit alias dolor voluptatibus nesciunt veritatis dicta saepe soluta.
+            Amet, recusandae quisquam dicta exercitationem sint maiores unde iure aliquam eligendi laudantium id, delectus labore! Fuga natus beatae soluta provident distinctio fugiat inventore? Necessitatibus, non. Assumenda, explicabo debitis? Qui, esse?
+            Sit voluptatum pariatur nihil voluptatibus illo quis expedita quasi molestiae sed obcaecati numquam, esse necessitatibus fugit accusantium officia sequi totam similique quia suscipit odio neque, minima ab? Expedita, beatae debitis?
+            Dolorum, cupiditate magnam saepe provident minima ea ipsa id mollitia temporibus repellendus accusantium beatae. Veritatis exercitationem voluptates vero, nobis, fuga voluptatem nemo, beatae deserunt porro cum vitae! Ullam, eos facere!
+            Labore commodi esse earum corrupti ratione nemo dolorum? Accusantium voluptate adipisci repellendus accusamus ducimus inventore quod facilis laboriosam rem laudantium necessitatibus similique impedit aperiam nihil iste, commodi aliquid animi tenetur.
+            Magni officiis hic aspernatur eum. Eum ipsam accusantium magni beatae unde recusandae architecto, reiciendis incidunt veniam amet nulla, nesciunt quam molestias odio cum dicta rerum quos autem inventore? Nam, saepe.
+            Obcaecati pariatur laboriosam tempore aliquam, doloremque voluptates distinctio amet velit ducimus illo praesentium enim magnam laborum suscipit ullam voluptas deserunt soluta quos. Ab iusto placeat in voluptates cum molestias ullam?
+            Vero laudantium ipsa temporibus voluptates hic culpa qui, soluta mollitia nesciunt doloremque adipisci veniam. Iste, natus! Aliquid, dolore minus odit ullam nostrum repudiandae illo corporis, ab ipsa sit, dignissimos sed?
+            Amet, distinctio. Distinctio fuga ratione eum iure illo doloremque libero voluptatem eaque at est velit sit dolorem amet quod ipsa veritatis eveniet, accusantium tempore eligendi necessitatibus modi inventore odit fugit!
+            Excepturi totam voluptatum eos, quis cupiditate voluptates facilis cumque ipsa vero, ipsam, corporis omnis blanditiis veritatis at sapiente fugiat veniam cum earum laborum nemo! Magnam qui rem saepe sapiente. Vitae.
+            Explicabo esse, molestiae, velit illum quaerat quia expedita quos, quae aut vel autem? Exercitationem, vitae magni, quia expedita fuga quam repellendus, quod tempora corrupti suscipit corporis numquam perferendis! In, itaque?
+            Minus, tempore? Molestiae cumque, iste ut ea, quas enim accusantium nisi autem soluta, omnis exercitationem veritatis nostrum perspiciatis placeat ullam. Explicabo aperiam eaque quia doloribus ab perspiciatis! Veniam, blanditiis exercitationem?
+            Sequi, nulla soluta. Ea omnis officia ab, itaque sequi debitis fuga. Asperiores, voluptas maiores impedit veritatis perspiciatis harum consequatur? Quidem repellat explicabo facere officia suscipit corporis sequi voluptate iusto minima.
+            Similique labore dicta nisi sapiente, aliquam iure molestiae consequuntur unde, praesentium fuga facere, impedit quaerat delectus incidunt minima laborum? Vero culpa at eius tempore vel harum tempora nesciunt doloribus labore!
+            Nisi, quis expedita reprehenderit voluptatum, quo asperiores alias accusamus doloremque cum quaerat, maiores excepturi nam perspiciatis fuga iste quibusdam autem minima aut! Vitae, iusto debitis. Unde laudantium corrupti cupiditate accusantium.
+            Assumenda veritatis pariatur quibusdam sequi quod illum ratione eos animi explicabo nemo quasi est, deserunt harum maiores esse ex repellat quidem tenetur nobis culpa accusamus? Sit in voluptate sapiente provident!
+            Ullam blanditiis velit neque, nostrum nam, numquam aperiam repudiandae vel eum doloremque modi ab. Atque, odit fuga eum, voluptatem, ut totam asperiores repellat mollitia suscipit magni provident! Quod, voluptates numquam?
+            Ab odit culpa, odio dolores dignissimos aspernatur excepturi fugit iusto inventore expedita saepe at impedit quisquam, officiis laborum animi iure! Cupiditate, delectus ut sunt iusto asperiores beatae et aut! Debitis!
+            Reprehenderit necessitatibus laboriosam soluta possimus vitae excepturi ea amet! Illum tenetur ad deserunt voluptatibus neque nisi nobis velit quisquam. Quia non quos rerum, molestias repellendus ratione nesciunt sunt nulla soluta!
+            Placeat amet nulla doloribus at perspiciatis facilis obcaecati numquam distinctio quam facere! Amet, ducimus est. Consequatur odit atque est saepe, doloribus corrupti autem labore obcaecati ex hic dignissimos ipsum in.
+            Consequatur eligendi illo laborum nobis. Earum molestias vero in maiores, ipsam aut delectus iste laudantium. Libero nihil similique aperiam eligendi tenetur ipsum unde, voluptate modi qui nisi enim deserunt non.
+            Quasi provident fugiat cupiditate. Facere maiores neque molestiae ipsa. Assumenda placeat facilis distinctio, repellat ad sit deleniti facere deserunt id cupiditate quos quas odio quibusdam commodi nisi soluta adipisci consequuntur.
+            Nisi facilis veniam quasi sit quibusdam laborum, voluptates totam delectus, eaque minima accusamus quo ex id. Vero magni ipsum quod eaque aspernatur voluptate, at reprehenderit repellendus similique asperiores cupiditate ipsam!
+            Reprehenderit fuga corrupti dolor quibusdam accusamus consequatur atque esse non, eligendi aut illo eum nihil molestiae blanditiis, suscipit, beatae officia dolore nisi. Repellendus maiores quae tempora nobis natus labore dolores.
+            Recusandae ipsam, perspiciatis voluptate ex libero minima assumenda aliquam deserunt officiis cupiditate amet laborum totam ratione veritatis molestias animi praesentium reiciendis harum expedita perferendis! Libero laborum alias vel blanditiis. Incidunt.
+            Dolores adipisci veniam quisquam consectetur, deleniti suscipit? Aut molestias facere id accusamus reiciendis culpa quae itaque illo quibusdam delectus architecto ipsum magnam, animi eos asperiores. Dignissimos soluta iusto dolor minus.
+            Reiciendis exercitationem laborum perferendis corporis possimus neque similique animi tempora. Distinctio corrupti pariatur consectetur officiis laborum similique blanditiis. Sit similique commodi nesciunt enim et a nostrum necessitatibus eaque explicabo. Dolores.
+            Quae ad, incidunt voluptate asperiores officiis veritatis libero modi deleniti, esse cupiditate dolore maxime corporis. Totam iusto quod vitae placeat incidunt dolore quasi, quia, ab eius a deleniti reprehenderit quae?
+            Quibusdam dicta molestiae vitae illum quas consectetur nostrum quisquam eius sit doloribus quo iste beatae nulla, reprehenderit ducimus ea minima eum ratione officia fuga. Laudantium itaque sunt culpa delectus unde.
+            Maiores, obcaecati nostrum. Nobis labore tenetur dolor ex hic, distinctio totam repudiandae, eligendi suscipit iure voluptates mollitia dolorem delectus placeat debitis eius voluptas in harum! Veritatis impedit labore provident ex.
+            Provident eius distinctio dolore possimus ipsum consequuntur, explicabo atque quas at commodi labore tempora rerum sint doloribus nisi consequatur eveniet nesciunt nulla perferendis? Pariatur, sapiente molestias nobis hic accusamus repudiandae.
+            Eveniet repellat aspernatur eos nam corrupti magnam, inventore adipisci pariatur impedit soluta placeat, laborum obcaecati, voluptate rem? Eligendi pariatur mollitia accusamus hic. Repellat non natus recusandae aliquid sit. Incidunt, sapiente.
+            Quis neque autem doloremque deleniti aspernatur recusandae, ducimus atque, sed, iure cum eum ipsum ratione dignissimos fugiat dolorum corrupti assumenda necessitatibus ipsa reprehenderit consequatur! Mollitia aut blanditiis minus omnis architecto?
+            Sunt sit itaque non. Eaque sit praesentium neque. Fuga necessitatibus maxime minima neque quae consectetur nesciunt eum corporis nam quis libero, voluptate nobis autem unde. A beatae sunt animi maiores.
+            Ipsam consectetur maiores sed repellendus vero officiis quaerat! Ullam unde aspernatur tempore, soluta dolore quae quis ab iure? Quo eius, sunt exercitationem doloremque harum nemo alias odit voluptatum optio distinctio.
+            Esse ut soluta quidem saepe, iusto quisquam cumque eaque! Officiis aspernatur recusandae tenetur. Sunt, repellat possimus ratione architecto sint quos fugiat explicabo modi at quibusdam tenetur nesciunt et, dignissimos dolore?
+            Dolores earum architecto eius ea ad quo ipsum nostrum, ducimus accusamus maxime, corrupti, necessitatibus blanditiis vero sunt soluta? Dolorem provident neque, consequatur necessitatibus non accusamus labore iusto nisi inventore fugiat!
+            Iure impedit sapiente velit ullam quod eius harum, accusantium deleniti sequi soluta hic voluptate debitis nisi minima blanditiis quasi quos maiores ipsa ipsum minus eligendi! Repellendus hic odio nulla explicabo.
+            Harum animi voluptatum obcaecati excepturi omnis, culpa illo fugiat, ab quam repellat alias sapiente modi? Sit accusamus, quasi corporis fuga nemo cumque optio doloremque quibusdam, nisi, autem dolore repudiandae. A!
+            Aperiam corporis at, illo explicabo repudiandae ipsam quis quas necessitatibus voluptates atque autem. Sequi quos, repudiandae ab dolorum eum voluptates sint cumque incidunt doloribus iusto velit aut, ipsa eveniet culpa.
+            Cupiditate eveniet beatae inventore rem doloribus minus dolore sapiente consequatur architecto non! Illo quasi eveniet officiis magnam voluptatibus, nulla quaerat, saepe voluptate deserunt ea, nobis neque incidunt reiciendis ratione corrupti?
+            Impedit ab molestias cupiditate. Quasi labore nesciunt ut mollitia? Ut iusto eum perspiciatis officiis magni hic quas incidunt, ab eaque ipsam deserunt, suscipit nisi veritatis omnis, corrupti soluta similique! Voluptate.
+            Officia placeat voluptatum, saepe nisi consectetur explicabo minus nobis? Ducimus at enim corrupti officiis eius temporibus odio eveniet quae soluta, aspernatur facilis dolor consequatur rerum amet, ab voluptas, sequi cum?
+            Explicabo cumque nobis in laudantium totam voluptates magni doloribus reiciendis ex obcaecati, ullam ab debitis consequatur dolorem adipisci, facilis mollitia? Voluptatem aliquam incidunt facilis illo omnis? Tempore, modi suscipit. Cumque!
+            Deserunt praesentium porro fugit repudiandae, reiciendis, voluptate doloribus quas saepe ipsa non deleniti a quidem minima labore culpa odio explicabo commodi, alias officiis? Temporibus consequuntur perferendis asperiores commodi ab architecto?
+            Harum amet ratione alias nam quas totam quia sapiente ab consequuntur voluptatibus dicta quidem mollitia labore saepe possimus, a, culpa libero! Fugiat quo, adipisci at odio explicabo iste pariatur cumque?
+            Eveniet, itaque illum harum officia porro blanditiis soluta ut quia suscipit eligendi in pariatur, laudantium error, aperiam optio nemo. Provident reprehenderit mollitia voluptatum iusto iste, nulla maxime nisi vero ipsa?
+            Error consequuntur ipsam dicta magni, similique aliquam! Iusto possimus voluptatibus debitis voluptatem ea! Officiis quia laborum delectus adipisci voluptatem. Ea pariatur inventore in illum, quo vel nemo laborum nobis quam.
+            Odit, ducimus debitis et voluptates vero necessitatibus, dicta architecto obcaecati culpa cumque accusamus in omnis asperiores aut exercitationem optio tempore animi at ut porro suscipit perspiciatis libero. Voluptatum, dignissimos praesentium!
+            Delectus distinctio est cum impedit aut, maiores esse. Qui rem quisquam suscipit architecto aut delectus a molestias dolor perferendis ex officiis amet cupiditate, tempore provident cumque magni recusandae ipsa veniam.
+            </p>
+          </div>
+
+          <!-- footer -->
+           <div class="footer" style="height: 30vh; width: 100vw; background-color: rgb(34, 34, 34); display: flex; ">
+            <div style=" width: 16vw; height: 23vh; margin-top: 30px; margin-left: 7px; text-align: center; margin-bottom: 20px;">
+              <h4 style="color: grey;">About</h4>
+              <p style="color: white;">Contact us</p>
+              <p style="color: white;">About us</p>
+              <p style="color: white;">Careers</p>
+              <p style="color: white;"> Flipkart stories</p>
+              <p style="color: white;">press</p> 
+              <p style="color: white;">Corporate informations</p>
+
+            </div>
+            <div style="  width: 16vw; height: 23vh; margin-top: 30px; margin-left: 7px; text-align: center; margin-bottom: 20px">
+              <h4 style="color: grey;">Group companies</h4>
+              <p style="color: white;">myntra</p>
+              <p style="color: white;">cleartrip</p>
+              <p style="color: white;">shopsy</p>
+          
+            </div>
+            <div style="  width: 16vw; height: 23vh; margin-top: 30px; margin-left: 7px; text-align: center; margin-bottom: 20px">
+              <h4 style="color: grey;">Help</h4>
+              <p style="color: white;">payment</p>
+              <p style="color: white;">shipping</p>
+              <p style="color: white;">Cancellation & returns</p>
+              <p style="color: white;">FAQ's</p>
+              <p style="color: white;">Report Infringment</p> 
+              
+            </div>
+            <div style=" width: 16vw; height: 23vh; margin-top: 30px; margin-left: 7px; text-align: center; margin-bottom: 20px">
+              <h4 style="color: grey;">consumer policy </h4>
+              <p style="color: white;">cancellation & return </p>
+              <p style="color: white;">Terms and policies</p>
+              <p style="color: white;">sequrity</p>
+              <p style="color: white;"> privacy</p>
+              <p style="color: white;">sitemap</p> 
+              <p style="color: white;">grievance redresal</p>
+              <p style="color: white;">epr complience</p>
+            </div>
+            <div style="border-left: 1px solid white; width: 16vw; height: 23vh; margin-top: 30px; margin-left: 7px; text-align: center; margin-bottom: 20px">
+              <h4 style="color: grey;">Mail us:</h4>
+              <p style="color: white;">Flipkart Internet Private Limited, </p>
+              <p style="color: white;">Buildings alyassa, Begonia &</p>
+              <p style="color: white;">clove embessy tech village,</p>
+              <p style="color: white;">outer ring road</p>
+              <p style="color: white;">Devarabeesanahalli village,</p> 
+              <p style="color: white;">Bengluru, 560103</p>
+              <p style="color: white;">Karnataka india</p>
+            </div>
+            <div style=" width: 16vw; height: 23vh; margin-top: 30px; margin-left: 7px; text-align: center; margin-bottom: 20px">
+              <h4 style="color: grey;">Registered office address:</h4>
+              <p style="color: white;">Flipkart Internet Private Limited, </p>
+              <p style="color: white;">Buildings alyassa, Begonia &</p>
+              <p style="color: white;">clove embessy tech village,</p>
+              <p style="color: white;">outer ring road</p>
+              <p style="color: white;">Devarabeesanahalli village,</p> 
+              <p style="color: white;">Bengluru, 560103</p>
+              <p style="color: white;">Karnataka india</p>
+              <p style="color: white;">CIN:U51109KA2012PTC066107</p>
+              <p style="color: white;">Telephone:044-45614700/044-67415800</p>
+            </div>
+
+           </div>
+           <div class="footer" style="height: 10vh; width: 100vw; background-color: rgb(38, 38, 38); display: flex; border-top: 0.5px solid white;">
+            <div style="width: 12vw; height: 8vh; margin-top: 10px; margin-left: 7px; margin-bottom: 10px;  display:flex ;">
+              <i class="fa-solid fa-shop"></i>
+              <p style="color: white; margin: 20px 0px 0px 10px;">Become a seller</p>
+            </div>
+            <div style="width: 10vw; height: 8vh; margin-top: 10px; margin-left: 7px; margin-bottom: 10px;  text-align: center;">
+              <p style="color: white; margin: 20px 0px 0px 10px;">Advertise</p>
+            </div>
+            <div style="width: 10vw; height: 8vh; margin-top: 10px; margin-left: 7px; margin-bottom: 10px;  display: flex; justify-content: center; ">
+              <i class="fa-solid fa-gift"></i>
+              <p style="color: white; margin: 20px 0px 0px 10px;">Gift cards</p>
+            </div>
+            <div style="width: 16vw; height: 8vh; margin-top: 10px; margin-left: 7px; margin-bottom: 10px;  display: flex; justify-content: center;">
+              <i class="fa-solid fa-question"></i>
+              <p style="color: white; margin: 20px 0px 0px 10px;">Help Centre</p>
+            </div>
+            <div style="width: 16vw; height: 8vh; margin-top: 10px; margin-left: 7px; margin-bottom: 10px;  display: flex; justify-content: center;">
+              <i class="fa-solid fa-copyright"></i>
+              <p style="color: white; margin: 20px 0px 0px 10px;">2007-2024 Flipkart.com</p>
+            </div>
+            <div style="width: 30vw; height: 8vh; margin-top: 10px; margin-left: 7px; margin-bottom: 10px; ">
+              <img src="/Opera Snapshot_2024-08-27_133941_www.flipkart.com.png" alt="">
+            </div>
+           </div>
+          
+      </body>
+
+</html>

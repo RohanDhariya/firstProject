@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar Example</title>
+  <style>
+    /* Reset styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #f0f0f0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .navbar-search {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-search input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .navbar-search button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .navbar-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-icons a {
+      margin-right: 10px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* Heart, wallet, and bag icons */
+    .navbar-icons .fa-heart,
+    .navbar-icons .fa-wallet,
+    .navbar-icons .fa-shopping-bag {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">MK</div>
+    <div class="navbar-search">
+      <input type="text" placeholder="Type a product name, e.g. Bozyme">
+      <button>Search</button>
+    </div>
+    <div class="navbar-icons">
+      <a href="#"><i class="fas fa-heart"></i></a>
+      <a href="#"><i class="fas fa-wallet"></i></a>
+      <a href="#"><i class="fas fa-shopping-bag"></i></a>
+      <a href="#" class="navbar-login-signup">Login/Sign Up</a>
+    </div>
+  </nav>
+</body>
+</html>

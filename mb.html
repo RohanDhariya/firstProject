@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-color: white;
+
+            /* justify-content: center; */
+        }
+
+        .navbar {
+            display: flex;
+            height: 12vh;
+            width: 100vw;
+            background-color: gray;
+        }
+
+        .heart {
+            height: 50px;
+        }
+
+        .logo {
+            border: 2px solid rgb(0, 255, 8);
+            margin-right: 625px;
+            margin-top: 10px;
+        }
+
+        .searchbar {
+            height: 6vh;
+            border: 2px solid red;
+            margin: 0px 50px 0px 0px;
+            /* padding: 0px 50px 0px 0px; */
+        }
+
+        .heart {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .text {
+            background-color: whitesmoke;
+            padding-left: 100px;
+            /* font-style: initial; */
+            font-family: math;
+            color: grey;
+        }
+
+        .protein {
+            height: 60vh;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .image {
+            width: 45vw;
+        }
+
+        .image_container {
+            width: 55vw;
+            border: 2px solid green;
+        }
+
+        .trust {
+            border: 2px solid yellow;
+            height: 14vh;
+            display: flex;
+            padding-top: 50px;
+        }
+
+        .com {
+            /* height: 10vh; */
+            /* width: 260px; */
+        }
+
+        .imgg {
+            border: 2px solid rgb(85, 0, 255);
+            display: flex;
+            height: 14vh;
+        }
+
+        .ingredients {
+            border: 2px solid orangered;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .ing {
+            border: 2px solid orangered;
+            width: 40vw;
+            height: 100vh;
+        }
+
+        .other {
+            border: 2px solid purple;
+            width: 60vw;
+        }
+        .benefits{
+            border: 2px  solid khaki;
+            height: 60vh;
+            width: 100vw;
+        }
+        #hh{
+            
+            color: grey;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-right: 50px;
+             
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="data:image/png;base64,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"
+                    alt="" style="height: 55px;  position: fixed;">
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Type a product name eg Biozyme" style="height: 5vh; width: 40vw;">
+
+            </div>
+            <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-wallet"></i>
+            </div>
+            <!-- <div class="wallet">
+            </div> -->
+
+        </div>
+        <div class="text">
+            <h3>Home/Proteins/Whey Proteins/MuscleBlaze Biozyme Performance Whey</h3>
+        </div>
+        <div class="protein">
+            <div class="image">
+                <img src="https://img3.hkrtcdn.com/27426/prd_2742542-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                    alt="" style="height: 45vh; padding-left: 265px; ">
+                <div class="imgg">
+                    <div class="com"><img
+                            src="https://img3.hkrtcdn.com/27426/prd_2742542-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                            alt="" style="height: 14vh;width: 4.5vw;padding-left: 270px;"></div>
+                    <div class="com"><img
+                            src="https://img1.hkrtcdn.com/27426/prd_2742540-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                            alt="" style="height: 14vh;width: 4.5vw;"></div>
+                    <div class="com"><img
+                            src="https://img10.hkrtcdn.com/15961/prd_1596049-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                            alt="" style="height: 14vh;width: 4.5vw;"></div>
+                    <div class="com"><img
+                            src="https://img8.hkrtcdn.com/14146/prd_1414557-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                            alt="" style="height: 14vh;width: 4.5vw;"></div>
+                    <div class="com"><img
+                            src="https://img4.hkrtcdn.com/31199/prd_3119843-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                            alt="" style="height: 14vh;width: 4.5vw;"></div>
+                    <div class="com"><img
+                            src="https://img10.hkrtcdn.com/14146/prd_1414559-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Rich-Chocolate_o.jpg"
+                            alt="" style="height: 14vh;width: 4.5vw;"></div>
+                </div>
+            </div>
+
+            <div class="image_container">
+                <h3
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey; padding-left: 20px;">
+                    Whey Protein</h3>
+                <h2 style="padding-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;gap: 5px; ">
+                    MuscleBlaze Biozyme Performance Whey, 2 kg</h2>
+                <h2 style="padding-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">(4.4 lb),
+                    Rich Chocolate</h2>
+                <h3
+                    style="padding-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: smaller;">
+                    4.5 <i class="fa-solid fa-star"></i> {Total 731 Reviews} </h3>
+                <h3
+                    style="padding-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: smaller;">
+                    MRP<s style="color: gray;">₹5,499</s></h3>
+                <h2
+                    style="padding-left: 20px; padding-bottom: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
+                    Price: ₹4,699 </h2>
+                <div class="trust">
+                    <div class="com"><img src="https://static1.hkrtcdn.com/mbnext/static/media/logos/des_labdors.png"
+                            alt="" style="height: 14vh; width: 9vw; padding-top: 95px;"></div>
+                    <div class="com"><img src="https://static1.hkrtcdn.com/mbnext/static/media/logos/des_nutras.png"
+                            alt="" style="height: 14vh;width: 9vw; padding-top: 95px;"></div>
+                    <div class="com"><img src="https://static1.hkrtcdn.com/mbnext/static/media/logos/des_asians.png"
+                            alt="" style="height: 14vh;width: 9vw; padding-top: 95px;"></div>
+                    <div class="com"><img src="https://static1.hkrtcdn.com/mbnext/static/media/logos/des_patent.png"
+                            alt="" style="height: 14vh;width: 9vw; padding-top: 95px;"></div>
+                    <div class="com"><img src="https://static1.hkrtcdn.com/mbnext/static/media/logos/des_informeds.png"
+                            alt="" style="height: 14vh;width: 9vw; padding-top: 95px;"></div>
+                    <div class="com"><img src="https://static1.hkrtcdn.com/mbnext/static/media/logos/des_sgs.png" alt=""
+                            style="height: 14vh;width: 9vw; padding-top: 95px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ingredients">
+        <div class="ing">
+            <img src="https://img4.hkrtcdn.com/27430/bnr_2742904_o.jpg" alt=""
+                style="height: 100vh; padding-left: 265px;">
+        </div>
+        <div class="other">
+            <h3 style="padding: 30px 0px 0px 20px;">Select Quantity</h3>
+            <button style="color: rgb(255, 255, 255); background-color: orange; height: 30px; width: 200px;  ">Add to
+                cart</button>
+        </div>
+    </div>
+    <div class="benefits">
+        <h3 >key benefits</h3>
+        <h3 id="hh">1. "INFORMED CHOICE, UK, LABDOOR, USA & TRUSTIFIED- TESTED & CERTIFIED It has been regularly & rigorously
+            tested, certified by Informed Choice Program U.K., Labdoor USA, Trustified for Accuracy of label Claims
+            (Protein content, no amino spiking) & Purity (free from heavy metals or biological contaminants)</h3>
+            <h3 id="hh">2. MB Biozyme Performance Whey comes with a proprietary international patent-pending Enhanced Absorption Formula (EAF ®) that ensures 50% higher protein absorption & 60% superior BCAA absorption when compared to other whey proteins
+            <h3 id="hh">
+                3. The leading Biozyme range by MuscleBlaze ® are India's first clinically-tested Whey Protein offerings which have been tested & proven for their efficacy (absorption & muscle-building) on Indian bodies
+
+            </h3>      
+            <h3 id="hh">4. Biozyme Performance Whey is also widely recommended since it significantly lowers any possible stomach discomfort in body-building consumers by enabling enhanced protein digestion
+            </h3>      
+            <h3 id="hh">5. Biozyme Performance Whey delivers 25g of protein per serving and is powered by all-imported, highest grade, international quality Whey Protein Concentrate
+                Per 36gm of 56 servings Contains*</h3>
+    </div>
+
+    </div>
+</body>
+
+</html>

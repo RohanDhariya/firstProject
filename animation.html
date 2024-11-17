@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14sept</title>
+    <style>
+        /* @keyframes Real{
+          0% { opacity: 0;}
+          10%{background-color: aquamarine;}
+          20%{background-color: blueviolet;}
+          30%{background-color: chocolate;}
+           50%{opacity: 1;}
+            100%{opacity: 0;}   
+        } */
+       @keyframes bouncing{
+        0%{
+            transform: translateX(0) translateY(0)scale(1);background-color: aqua;
+        }
+        25%{
+            transform: translateX(20vw) translateY(100px) scale(2);background-color: blue;
+        }
+        50%{
+            transform: translateX(35vw) translateY(100px)scale(1);background-color: brown;
+        }
+        75%{
+            transform: translateX(20vw) translateY(-50px)scale(2);background-color: burlywood;
+        }
+        100%{
+            transform: translateX(35vw)translateY(400px) scale(1);background-color: bisque;
+        }
+        
+       }
+       @keyframes body{
+         0%{
+            background-color: aqua;
+         }
+         25%{
+            background-color: beige;
+         }
+         50%{
+            background-color: blueviolet;
+         }
+         75%{
+            background-color: cornflowerblue;
+         }
+         100%{
+            background-color: crimson;
+         }
+       }
+        div{
+            animation-name: bouncing;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+            
+            /* animation-direction: alternate-reverse; */
+        }
+        body{
+            animation-name: body;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="rohan" style="width: 5vw;height: 10vh; background-color: rgb(239, 12, 12);">
+        <h3 style="border-radius: 100%; text-align: center; font-size: small;">Rohan</h3>
+    </div>
+    <div class="body">
+
+    </div>
+</body>
+</html>
